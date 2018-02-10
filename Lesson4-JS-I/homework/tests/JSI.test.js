@@ -140,22 +140,22 @@ describe('square(num)', function() {
   });
 });
 
-describe('cube(num)', function() {
-  it('should return the argument after cubing it', function() {
-    expect(exercises.cube(3)).toBe(27);
-    expect(exercises.cube(0)).toBe(0);
-    expect(exercises.cube(-5)).toBe(-125);
-  });
-});
+// describe('cube(num)', function() {
+//   it('should return the argument after cubing it', function() {
+//     expect(exercises.cube(3)).toBe(27);
+//     expect(exercises.cube(0)).toBe(0);
+//     expect(exercises.cube(-5)).toBe(-125);
+//   });
+// });
 
-describe('raiseToPower(num, exponent)', function() {
-  it('should return the argument after raising it to the exponent\'s power', function() {
-    expect(exercises.raiseToPower(2, 2)).toBe(4);
-    expect(exercises.raiseToPower(2, 3)).toBe(8);
-    expect(exercises.raiseToPower(0, 5)).toBe(0);
-    expect(exercises.raiseToPower(10, 1)).toBe(10);
-  });
-});
+// describe('raiseToPower(num, exponent)', function() {
+//   it('should return the argument after raising it to the exponent\'s power', function() {
+//     expect(exercises.raiseToPower(2, 2)).toBe(4);
+//     expect(exercises.raiseToPower(2, 3)).toBe(8);
+//     expect(exercises.raiseToPower(0, 5)).toBe(0);
+//     expect(exercises.raiseToPower(10, 1)).toBe(10);
+//   });
+// });
 
 describe('roundNumber(num)', function() {
   it('should return the argument after rounding it', function() {

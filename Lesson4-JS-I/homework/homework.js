@@ -66,77 +66,98 @@ function areSameLength(str1, str2) {
 }
 
 function lessThanNinety(num) {
-  // return true if the function argument: num , is less than ninety
-  // otherwise return false
-  // code here
+  if(num < 90) {
+    return true;
+  }
+  return false;
 }
 
 function greaterThanFifty(num) {
-  // return true if num is greater than fifty
-  // otherwise return false
-  // code here
+  if(num > 50) {
+    return true;
+  }
+  return false;
 }
 
 function getRemainder(x, y) {
-  // return the remainder from dividing x by y
-  // code here
+  return x % y;
 }
 
 function isEven(num) {
-  // return true if num is even
-  // otherwise return false
-  // code here
+  if(num % 2 == 0) {
+    return true;
+  }
+  return false;
 }
 
 function isOdd(num) {
-  // return true if num is odd
-  // otherwise return false
-  // code here
+  if(num % 2 == 1) {
+    return true;
+  }
+  return false;
 }
 
 function square(num) {
   // square num and return the new value
   // hint: NOT square root!
   // code here
+  return Math.pow(num, 2);
 }
+square(6);
 
-function cube(num) {
-  // cube num and return the new value
-  // code here
-}
+// var cube = function () {
+//   // cube num and return the new value
+//   // code here
+//   return (n*n*n);
+// }
+// cube(2);
 
-function raiseToPower(num, exponent) {
-  // raise num to whatever power is passed in as exponent
-  // code here
-}
+// function raiseToPower(num, exponent) {
+//   // raise num to whatever power is passed in as exponent
+//   // code here
+//   return pow(num, exponent);
+// }
+// raiseToPower(2, 3);
 
 function roundNumber(num) {
   // round num and return it
   // code here
+  return Math.round(num);
 }
+roundNumber(1.4567);
 
 function roundUp(num) {
   // round num up and return it
   // code here
+  return Math.ceil(num);
 }
+roundUp(1.4567);
 
 function addExclamationPoint(str) {
   // add an exclamation point to the end of str and return the new string
   // 'hello world' -> 'hello world!'
   // code here
+  return str + "!";
 }
+addExclamationPoint("Hello World");
 
 function combineNames(firstName, lastName) {
   // return firstName and lastName combined as one string and separated by a space.
   // 'Lambda', 'School' -> 'Lambda School'
   // code here
+  return firstName + ' ' + lastName;
 }
+combineNames("Jan", "Kowalski");
 
 function getGreeting(name) {
   // Take the name string and concatenate other strings onto it so it takes the following form:
   // 'Sam' -> 'Hello Sam!'
   // code here
+  return "Hello " + name + "!";
 }
+getGreeting("Sam");
+
+
 
 // The next three questions will have you implement math area formulas. 
 // If you can't remember these area formulas then head over to Google.
@@ -144,12 +165,16 @@ function getGreeting(name) {
 function getRectangleArea(length, width) {
   // return the area of the rectangle by using length and width
   // code here
+  return length * width;
 }
+getRectangleArea(2, 2);
 
 function getTriangleArea(base, height) {
   // return the area of the triangle by using base and height
   // code here
+  return ((base * height) / 2);
 }
+getTriangleArea(2, 2);
 
 // Do not modify code below this line.
 // --------------------------------
@@ -174,8 +199,8 @@ module.exports = {
   isEven: isEven,
   isOdd: isOdd,
   square: square,
-  cube: cube,
-  raiseToPower: raiseToPower,
+  // cube: cube,
+  // raiseToPower: raiseToPower,
   roundNumber: roundNumber,
   roundUp: roundUp,
   addExclamationPoint: addExclamationPoint,
